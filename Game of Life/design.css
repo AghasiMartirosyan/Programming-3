@@ -1,0 +1,75 @@
+h1 {
+    font-size: 80px;
+    font-family: fantasy;
+    text-align: center; 
+    color: #a38d86;
+   }
+  
+
+  table, th, td {
+    border:1px solid black;
+  }
+
+#kanach{
+    color: green;
+    font-size: 50px
+}
+
+#dexin{
+    color: yellow;
+    font-size: 50px
+}
+#karmir{
+    color: red;
+    font-size: 50px
+} 
+#sev{
+    color: black;
+    font-size: 50px
+} 
+#fialet{
+    color: purple;
+    font-size: 50px
+} 
+
+.button {
+    display: inline-block;
+    padding: 25px 35px;
+    font-size: 24px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color: #fff;
+    background-color: #4CAF50;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 9px #999;
+    width: 290px;
+    height: 90px;
+  }
+  
+  .button:hover {background-color: #3e8e41}
+  
+  .button:active {
+    background-color: #3e8e41;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+  }
+
+  #grass{
+    position: absolute;
+    transform: translate(150px,75px);
+  }
+  #grasseater{
+    position: absolute;
+    transform: translate(750px,75px);
+  }
+  #eater{
+    position: absolute;
+    transform: translate(150px,300px);
+  }
+  #toxic{
+    position: absolute;
+    transform: translate(750px,300px);
+  }

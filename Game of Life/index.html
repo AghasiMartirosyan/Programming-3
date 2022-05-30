@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>GAME OF LIFE</h1>
+    <script src="https://cdn.jsdelivr.net/npm/p5@1.4.0/lib/p5.js"></script>
+    <script src="class.js"></script>
+    <script src="script.js"></script>
+    <script src="grassEater.js"></script>
+    <script src="eater.js"></script>
+    <script src="ToxicGrass.js"></script>
+    <script src="AmenaKer.js"></script>
+    <link rel="stylesheet" href="./design.css">
+    <table>
+        <tr>
+            <th>Գույն</th>
+            <th>Կերպար</th>
+            <th>Գործողություն</th>
+        </tr>
+        <tr>
+            <th id="kanach">▬</th>
+            <th>Խոտ</th>
+            <th>Բազմանում է 5 տակտը մեկ,հանդիսանում է կեր խոտակերի և ամենակերի համար</th>
+        </tr>
+        <tr>
+            <th id="dexin">▬</th>
+            <th>Խոտակեր</th>
+            <th>Բազմանում է 5 տակտը մեկ,ուտում է խոտ,մահանում է 5 տակտ խոտ չուտելուց կամ թունավոր խոտ ուտելուց,կեր է
+                գիշատիչի և ամենակերի համար</th>
+        </tr>
+        <tr>
+            <th id="karmir">▬</th>
+            <th>Գիշատիչ
+            <th>Ուտում է թունավոր խոտ և խոտակեր,ամեն 15 տակտը մեկ բազմացնելով խոտ,կեր է ամենակերի համար</th>
+        </tr>
+        <tr>
+            <th id="sev">▬</th>
+            <th>Թունավոր խոտ</th>
+            <th>Բազմանում է 11 տակտը մեկ,սպանում է խոտակերի,կեր է գիշատիչի և ամենակերի համար</th>
+        </tr>
+        <tr>
+            <th id="fialet">▬</th>
+            <th>Ամենակեր</th>
+            <th>Ուտում է ամեն ինչ,ամեն 5 տակտը մեկ բազմանում է,մահանում են 5 տակտ չուտելուց,մի քանիսը չեն մահանում խաղն
+                ավարտելու համար</th>
+        </tr>
+    </table>
+    <button class ="button" id="grass" onclick="addgrass()">Ավելացնել Խոտ</button>
+    <button class ="button" id="grasseater"onclick="addgrasseater()">Ավելացնել Խոտակեր</button>
+    <button class ="button" id="eater"onclick="addeater()">Ավելացնել գիշատիչ</button>
+    <button class ="button" id="toxic"onclick="addtoxic()">Ավելացնել թունավոր խոտ</button> 
+</body>
+</html>         
